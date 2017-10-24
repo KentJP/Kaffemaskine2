@@ -36,6 +36,11 @@ public class KaffeMaskine2Controller implements Initializable
         // TODO
     }
 
+    /**
+     * This metod handæles the coffeemakers options
+     *
+     * @param event Retrieves the button
+     */
     @FXML
     private void makeDrink(ActionEvent event)
     {
@@ -57,6 +62,7 @@ public class KaffeMaskine2Controller implements Initializable
         }
         else
         {
+            // If none of the above matches, throw an error
             System.out.println("Error");
         }
     }
