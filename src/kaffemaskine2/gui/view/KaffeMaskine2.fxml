@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kaffemaskine2.gui.controller.KaffeMaskine2Controller">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kaffemaskine2.gui.controller.KaffeMaskine2Controller">
     <children>
-        <Button fx:id="btnKaffe" layoutX="31.0" layoutY="139.0" mnemonicParsing="false" onAction="#makeDrink" text="Kaffe" />
-        <Button fx:id="btnKakao" layoutX="31.0" layoutY="232.0" mnemonicParsing="false" onAction="#makeDrink" text="Kakao" />
-        <Button fx:id="btnCapucino" layoutX="31.0" layoutY="185.0" mnemonicParsing="false" onAction="#makeDrink" text="Capucino" />
-        <Button fx:id="btnCaffeLatte" layoutX="31.0" layoutY="277.0" mnemonicParsing="false" onAction="#makeDrink" text="Caffe Latte" />
+        <TextArea fx:id="txtarea" editable="false" layoutX="15.0" layoutY="63.0" mouseTransparent="true" prefHeight="112.0" prefWidth="232.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </TextArea>
+
+        <Button fx:id="btnKakao" layoutX="82.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleDrink" text="" />
+        <Button fx:id="btnCapucino" layoutX="82.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleDrink" text="" />
+        <Button fx:id="btnKaffe" layoutX="82.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleDrink" text="" />
+        <Button fx:id="btnCaffeLatte" layoutX="82.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleDrink" text="" />
+
+        <Label layoutX="127.0" layoutY="210.0" text="Coffee" />
+        <Label layoutX="127.0" layoutY="247.0" text="Cocoa" />
+        <Label layoutX="127.0" layoutY="284.0" text="Capucino" />
+        <Label layoutX="127.0" layoutY="321.0" text="Cafe Latte" />
+
+        <ImageView fitHeight="366.0" fitWidth="324.0" layoutX="262.0" layoutY="17.0">
+            <image>
+                <Image url="@../images/coffemaker.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="coffeeCup" layoutX="377.0" layoutY="252.0" onMouseClicked="#handleCup">
+            <image>
+                <Image url="@../images/cup-empty.png" />
+            </image>
+        </ImageView>
     </children>
+
+    <stylesheets>
+        <URL value="@KaffeMaskine2.css" />
+    </stylesheets>
 </AnchorPane>
