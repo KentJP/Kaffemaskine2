@@ -15,6 +15,10 @@ import javafx.scene.control.Button;
 public class KaffeMaskine2Controller implements Initializable
 {
 
+    int waitTimer = 5;
+    int sleepTimer = waitTimer * 1000;
+    String finished = "Værsgo";
+
     @FXML
     private Button btnKaffe;
     @FXML
@@ -47,26 +51,26 @@ public class KaffeMaskine2Controller implements Initializable
         if (event.getSource().equals(btnKaffe))
         {
             System.out.println("Laver kaffe");
-            Thread.sleep(20000);
-            System.out.println("Værsgo");
+            Thread.sleep(sleepTimer);
+            System.out.println(finished);
         }
         else if (event.getSource().equals(btnKakao))
         {
             System.out.println("Laver Kakao");
-            Thread.sleep(20000);
-            System.out.println("Værsgo");
+            Thread.sleep(sleepTimer);
+            System.out.println(finished);
         }
         else if (event.getSource().equals(btnCapucino))
         {
             System.out.println("Laver Capucino");
-            Thread.sleep(20000);
-            System.out.println("Værsgo");
+            Thread.sleep(sleepTimer);
+            System.out.println(finished);
         }
         else if (event.getSource().equals(btnCaffeLatte))
         {
             System.out.println("Laver CaffeLatte");
-            Thread.sleep(20000);
-            System.out.println("Værsgo");
+            Thread.sleep(sleepTimer);
+            System.out.println(finished);
         }
         else
         {
