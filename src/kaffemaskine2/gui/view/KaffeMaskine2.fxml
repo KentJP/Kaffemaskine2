@@ -5,9 +5,9 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kaffemaskine2.gui.controller.KaffeMaskine2Controller">
     <children>
-        <Button fx:id="btnKaffe" layoutX="31.0" layoutY="139.0" mnemonicParsing="false" onAction="#makeKaffe" text="Kaffe" />
-        <Button fx:id="btnKakao" layoutX="31.0" layoutY="232.0" mnemonicParsing="false" onAction="#makeKakao" text="Kakao" />
-        <Button fx:id="btnCapucino" layoutX="31.0" layoutY="185.0" mnemonicParsing="false" onAction="#makeCapucino" text="Capucino" />
-        <Button fx:id="btnCaffeLatte" layoutX="31.0" layoutY="277.0" mnemonicParsing="false" onAction="#makeCaffeLatte" text="Caffe Latte" />
+        <Button fx:id="btnKaffe" layoutX="31.0" layoutY="139.0" mnemonicParsing="false" onAction="#makeDrink" text="Kaffe" />
+        <Button fx:id="btnKakao" layoutX="31.0" layoutY="232.0" mnemonicParsing="false" onAction="#makeDrink" text="Kakao" />
+        <Button fx:id="btnCapucino" layoutX="31.0" layoutY="185.0" mnemonicParsing="false" onAction="#makeDrink" text="Capucino" />
+        <Button fx:id="btnCaffeLatte" layoutX="31.0" layoutY="277.0" mnemonicParsing="false" onAction="#makeDrink" text="Caffe Latte" />
     </children>
 </AnchorPane>
